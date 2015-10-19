@@ -1,0 +1,102 @@
+body{
+    background-color: #fffce7;
+    font-family: "Lucida Grande","Microsoft YaHei","Hiragino Sans GB W3","Segoe UI",
+    "Hiragino Sans GB",  "FontAwesome", sans-serif;
+}
+
+@media screen and (min-width: 641px) {
+    body{
+        width:640px;
+        margin:0 auto;
+    }
+}
+
+#info{
+    width:95%;
+    margin-left:2.5%;
+    background: #ffffff;
+    box-shadow: 0 0 1em #bbb9a9;
+}
+.zone{
+    clear: both;
+    height:50px;
+    position: relative;
+}
+.lines{
+    height: 6px;
+    width: 98%;
+    background: url("../images/line.png") no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    bottom: -1px;
+    left: 1%;
+}
+.lines img{
+    max-width: 100%;
+}
+.name{
+    width:40%;
+    float: left;
+    line-height: 45px;
+    margin-left: 5%;
+}
+.detail{
+    height: 35px;
+    line-height: 30px;
+    position: relative;
+    z-index: 2;
+    float: left;
+    width: 45%;
+    margin-bottom: 0;
+    display: table-cell;
+    border: none;
+    text-align: left;
+    outline:none;
+}
+.getCode{
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background: #fc5887;
+    height: 30px;
+    line-height: 30px;
+    vertical-align: middle;
+    text-align: center;
+    color: #ffffff;
+    margin-top: 10px;
+    margin-right: 10px;
+    width:30%;
+    float: right;
+}
+#bind,#save{
+    clear: both;
+    background: #fd306b;
+    box-shadow: 0 0 0.8em black;
+    border: none;
+    font-size: 28px;
+    line-height: 100px;
+    text-align: center;
+    color: #ffffff;
+}
+#number{
+    height: 35px;
+    line-height: 50px;
+    position: relative;
+    z-index: 2;
+    float: left;
+    width: 54%;
+    margin-bottom: 0;
+    display: table-cell;
+    border: none;
+    text-align: left;
+    outline:none;
+    padding-left:15px;
+}
+#sex-select{
+    outline:none;
+    border: none;
+    line-height: 40px;
+    margin-top: 10px;
+    color: gray;
+    overflow: hidden;
+}

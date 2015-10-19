@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="爸妈邦,微信积分">
+    <meta name="keywords" content="爸妈邦,母婴,微信,积分">
+    <meta http-equiv="content-language" content="zh-CN" />
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>爸妈邦-积分等级说明</title>
+    <!-- Set render engine for 360 browser -->
+    <meta name="renderer" content="webkit">
+    <!-- No Baidu Siteapp-->
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="爸妈邦"/>
+    <!--<link rel="shortcut icon" type="image/ico" href="ui/resource/images/common/favicon.ico">-->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+    <link rel="stylesheet" type="text/css" href="css/rank.css"/>
+    <style>
+        body{
+            background-color: #fefdec;
+            font-family: "Lucida Grande","Microsoft YaHei","Hiragino Sans GB W3","Segoe UI",
+            "Hiragino Sans GB",  "FontAwesome", sans-serif;
+        }
+        @media screen and (min-width: 641px) {
+            body{
+                width:640px;
+                margin:0 auto;
+            }
+        }
+        #title, .ranks{
+            height: 45px;
+            line-height: 45px;
+            border-radius:45px;
+            box-shadow: 0 0 1em #d8d7cb;
+        }
+        #title{
+            margin:30px auto 25px;
+            width:80%;
+            font-size: 20px;
+            color: #e5325d;
+            text-align: center;
+        }
+        .ranks{
+            position:relative;
+            margin:20px auto;
+            width:95%;
+            font-size: 20px;
+            color: #000;
+            text-align: left;
+        }
+        .ranks code{
+            font-size: 16px;
+        }
+        .ranks span{
+            margin-left: 60px;
+        }
+        .icons{
+            position: absolute;
+            left: -5px;
+            top: -5px;
+            width: 50px;
+            height: 50px;
+            border-radius: 90px;
+            box-shadow: 0 0 1em #d8d7cb;
+            background-size: contain;
+            z-index: 100;
+        }
+
+    </style>
+</head>
+<body>
+<div id="title">
+    积分等级说明
+</div>
+<div class="ranks">
+    <span>邦豆 -- <code>注册</code></span>
+    <div class="icons icon1"></div>
+</div>
+<!---->
+<div class="ranks">
+    <span>小邦粉 -- <code>积分1500-7500</code></span>
+    <div class="icons icon2"></div>
+</div>
+<!---->
+<div class="ranks">
+    <span>中邦粉 -- <code>积分7501-15000</code></span>
+    <div class="icons icon3"></div>
+</div>
+<!---->
+<div class="ranks">
+    <span>大邦粉 -- <code>积分15001-25000</code></span>
+    <div class="icons icon4"></div>
+</div>
+<!---->
+<div class="ranks">
+    <span>超级邦粉 -- <code>积分25001-50000</code></span>
+    <div class="icons icon5"></div>
+</div>
+<!---->
+<div class="ranks">
+    <span>顶级邦粉 -- <code>积分50000以上</code></span>
+    <div class="icons icon6"></div>
+</div>
+</body>
+</html>

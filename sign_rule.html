@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="爸妈邦,微信积分">
+    <meta name="keywords" content="爸妈邦,母婴,微信,积分">
+    <meta http-equiv="content-language" content="zh-CN" />
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>爸妈邦-签到规则</title>
+    <!-- Set render engine for 360 browser -->
+    <meta name="renderer" content="webkit">
+    <!-- No Baidu Siteapp-->
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="爸妈邦"/>
+    <!--<link rel="shortcut icon" type="image/ico" href="ui/resource/images/common/favicon.ico">-->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+    <link rel="stylesheet" type="text/css" href="css/common.css"/>
+    <style>
+        body{
+            background-color: #fffef7;
+            font-family:"Lucida Grande", "Microsoft YaHei","Hiragino Sans GB W3","Segoe UI",
+            "Hiragino Sans GB",  "FontAwesome", sans-serif;
+        }
+
+        @media screen and (min-width: 641px) {
+            body{
+                position: relative;
+                width:640px;
+                margin:0 auto;
+            }
+        }
+        #signTitle{
+            width: 75%;
+            height: 60px;
+            text-align: right;
+            font-size: 24px;
+            margin: 0 auto;
+            margin-top: 40px;
+            margin-bottom: 25px;
+            border-radius: 5px;
+            box-shadow:  0 0 1em #d8d7cb;
+            line-height: 80px;
+            vertical-align: bottom;
+            padding-right: 20px;
+        }
+        #top{
+            position: relative;
+        }
+        #logo{
+            position: absolute;
+            top:-1em;
+            left: 1em;
+        }
+        #logo img{
+            max-width: 58%;
+        }
+        #main{
+            clear: both;
+            width: 80%;
+            margin: 0 auto;
+            border-radius: 5px;
+            box-shadow:  0 0 1em #d8d7cb;
+            font-size: 16px;
+            padding:25px 10px 10px 10px ;
+        }
+        .left{
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            float: left;
+            background: #e5325d;
+            color: #ffffff;
+            border-radius: 45px;
+            text-align: center;
+            font-size: 23px;
+
+        }
+        .right{
+            width: 80%;
+            float: right;
+            padding-left: 20px;
+            line-height: 30px;
+        }
+        .item{
+            clear: both;
+            display: block;
+            height: 60px;
+            margin-bottom: 10px;
+        }
+        #main .item:last-child{
+            margin-bottom: 0px;
+        }
+        #one{
+            clear: both;
+        }
+        #two{
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+
+<div class="top">
+    <div class="logo"><img src="images/1_rule.png"/> </div>
+    <div class="signTitle">签到规则</div>
+</div>
+<div id="main">
+    <div id="one" class="item">
+        <span class="left">1</span>
+        <span class="right">
+            每天坚持连续签到，则每次签到能领取10点积分。
+        </span>
+    </div>
+    <div id="two"  class="item">
+        <span class="left">2</span>
+        <span class="right">
+           连续签到7天，积分积累到70分，加赠30点积分。
+        </span>
+    </div>
+    <div id="three"  class="item">
+        <span class="left">3</span>
+        <span class="right">
+            若某天漏签，则当天累计中的积分奖金清零。
+        </span>
+    </div>
+    <div id="four"  class="item">
+        <span class="left">4</span>
+        <span class="right">
+            若一个自然月全勤签到则加赠50点积分。
+        </span>
+    </div>
+    <div id="five"  class="item">
+        <span class="left">5</span>
+        <span class="right">
+            活动解释权归爸妈邦所有。
+        </span>
+    </div>
+</div>
+
+</body>
+<script src="js/jquery-1.11.1.js"></script>
+<script type="text/javascript">
+    $(".left").each(
+        function(){
+            var h = ($(this).siblings(".right").height()-30)/2 ;
+            $(this).css('margin-top',h+ 'px');
+        }
+    )
+</script>
+</html>

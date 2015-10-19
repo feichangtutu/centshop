@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="爸妈邦,微信积分">
+    <meta name="keywords" content="爸妈邦,母婴,微信,积分">
+    <meta http-equiv="content-language" content="zh-CN" />
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>爸妈邦微信积分绑定</title>
+    <!-- Set render engine for 360 browser -->
+    <meta name="renderer" content="webkit">
+    <!-- No Baidu Siteapp-->
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="爸妈邦"/>
+    <!--<link rel="shortcut icon" type="image/ico" href="ui/resource/images/common/favicon.ico">-->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+    <link rel="stylesheet" type="text/css" href="css/bind.css"/>
+    <style>
+        .icon, #bind{
+            width:100px;
+            height: 100px;
+            margin:30px auto;
+            border-radius: 1000px;
+            border:2px solid #f17e97;
+            box-shadow: 0 0 1em black;
+        }
+        .icon0{
+            background: url("images/icon-origin.png") white center no-repeat;
+            background-size: 60% 60%;
+        }
+    </style>
+</head>
+<body>
+<!--显示用户微信头像-->
+<div class="icon icon0">
+</div>
+
+<div id="info">
+    <div class="zone">
+        <label class="name" for="nickname">宝宝昵称</label>
+        <input class="detail" id="nickname" type="text" placeholder="Nickname"/>
+        <div class="lines"></div>
+    </div>
+
+    <!-- -->
+    <div class="zone">
+        <label class="name">宝宝生日/预产期</label>
+        <input class="detail" id="birthdate" type="date" placeholder="Birthday"/>
+        <div class="lines"></div>
+    </div>
+
+    <!-- -->
+    <div class="zone">
+        <label class="name">宝宝性别</label>
+        <select id="sex-select">
+            <option value="choose">选择宝宝性别</option>
+            <option value="male">男</option>
+            <option value="femail">女</option>
+        </select>
+        <!--<input class="detail" id="sex" type="text" placeholder="Sex"/>-->
+        <div class="lines"></div>
+    </div>
+
+    <!-- -->
+    <div class="zone">
+        <input id="number" type="tel" placeholder="手机号码"/>
+        <span class="getCode">获取验证码</span>
+        <div class="lines"></div>
+    </div>
+
+    <!-- -->
+    <div class="zone">
+        <label class="name" for="code">验证码</label>
+        <input class="detail" id="code" type="text" placeholder="Verify Code"/>
+        <div class="lines"></div>
+    </div>
+</div>
+<div id="bind">
+绑定
+</div>
+</body>
+
+<script type="text/javascript">
+
+</script>
+</html>

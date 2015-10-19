@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="爸妈邦,微信积分">
+    <meta name="keywords" content="爸妈邦,母婴,微信,积分">
+    <meta http-equiv="content-language" content="zh-CN" />
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>我的积分</title>
+    <!-- Set render engine for 360 browser -->
+    <meta name="renderer" content="webkit">
+    <!-- No Baidu Siteapp-->
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="爸妈邦"/>
+    <!--<link rel="shortcut icon" type="image/ico" href="ui/resource/images/common/favicon.ico">-->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+    <link rel="stylesheet" type="text/css" href="css/rank.css"/>
+    <link rel="stylesheet" type="text/css" href="css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="css/my-cents.css"/>
+</head>
+<body>
+<div class="iconLine">
+    <div class="iconX icon1 currentRank"></div>
+    <div class="iconX icon2"></div>
+    <div class="iconX icon3"></div>
+    <div class="iconX icon4"></div>
+    <div class="iconX icon5"></div>
+    <div class="iconX icon6"></div>
+</div>
+<div class="info">
+    <div class="left">
+        <!-- 显示微信用户头像-->
+        <img src="images/head.png"/>
+    </div>
+    <div class="right">
+        <div><span>获得</span><span id="score">100000</span><span>积分</span></div>
+        <span>是</span><span id="nowTitle">中邦粉</span><span>啦</span>
+    </div>
+</div>
+<div id="mainIndex">
+    <!-- 此处跳转前需做判断，有积分则跳转到cents-record.html-->
+    <!-- 无积分需跳转到no-cents.html-->
+    <a href="cents-record.html">
+        <div class="le">
+            <div class="picZone"><img src="images/record.png"/></div>
+            <div class="entrance">获取记录</div>
+        </div>
+    </a>
+    <a href="shop.html">
+        <div class="rt">
+            <div class="picZone"><img src="images/daily/5_shop.png"/></div>
+            <div class="entrance">积分商城</div>
+        </div>
+    </a>
+</div>
+
+<div class="top">
+    <div class="logo"><img src="images/1_rule.png"/> </div>
+    <div class="signTitle">积分说明</div>
+</div>
+<ul class="content">
+    <li class="bigDot">爸妈邦积分奖励计划是为邦粉设立的专项服务计划，
+        邦粉们可通过个人得付出获取对应的积分。
+    </li>
+</ul>
+<ul class="content">
+    <li class="bigDot">获得方式
+    </li>
+    <ul class="innerContent">
+        <li class="smallDot">转发文章</br>
+            分享爸妈邦文章至朋友圈，通过好友点击的次数结算对应积分奖励。
+            （每有效1次点击获得0.5分）
+        </li>
+        <li class="smallDot">每日签到</br>
+            连续签到获得更多积分。
+        </li>
+    </ul>
+</ul>
+<ul class="content">
+    <a href="rank.html">
+        <li class="bigDot rankLink">积分等级说明
+        </li>
+    </a>
+</ul>
+<ul class="content" style="margin-bottom: 30px;">
+    <a href="rank.html">
+        <li class="bigDot">使用有效期</br>
+            积分有效期为获得积分后366天内有效，过期作废。
+        </li>
+    </a>
+</ul>
+</body>
+<script type="text/javascript" src="js/jquery-1.11.1.js"></script>
+<script type="text/javascript">
+
+    $('.iconX').css('height',$('.iconX').width());
+//choose current rank:score接收底层积分数据，切换当前等级css
+    var score=2000;
+
+    $('#score').text(score);
+
+    if(score>=1500 && score <= 7500){
+        $('.iconX').removeClass('currentRank');
+        $('.icon2').addClass('currentRank');
+        $('#nowTitle').text('小邦粉');
+    }else if(score > 7500 && score <= 15000){
+        $('.iconX').removeClass('currentRank');
+        $('.icon3').addClass('currentRank');
+        $('#nowTitle').innerText('中邦粉');
+    }else if(score >= 15001 && score <= 25000){
+        $('.iconX').removeClass('currentRank');
+        $('.icon4').addClass('currentRank');
+        $('#nowTitle').innerText('大邦粉');
+    }else if(score >= 25001 && score <= 50000){
+        $('.iconX').removeClass('currentRank');
+        $('.icon5').addClass('currentRank');
+        $('#nowTitle').innerText('超级邦粉');
+    }else if(score > 50000){
+        $('.iconX').removeClass('currentRank');
+        $('.icon6').addClass('currentRank');
+        $('#nowTitle').innerText('顶级邦粉');
+    }else{
+        $('.icon1').addClass('currentRank');
+        $('#nowTitle').innerText('邦豆');
+    }
+
+    window.addEventListener("resize", function() {
+        location.reload()
+    }, false);
+
+</script>
+</html>

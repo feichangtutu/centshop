@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head lang="en">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="爸妈邦,微信积分">
+    <meta name="keywords" content="爸妈邦,母婴,微信,积分">
+    <meta http-equiv="content-language" content="zh-CN" />
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>爸妈邦-积分签到</title>
+    <!-- Set render engine for 360 browser -->
+    <meta name="renderer" content="webkit">
+    <!-- No Baidu Siteapp-->
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="爸妈邦"/>
+    <!--<link rel="shortcut icon" type="image/ico" href="ui/resource/images/common/favicon.ico">-->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+    <link rel="stylesheet" type="text/css" href="css/sign.css"/>
+    <link rel="stylesheet" type="text/css" href="css/rank.css"/>
+</head>
+<body>
+    <div id="signTop">
+        <div class="left">
+            <div id="signButton" class="clickSign">点击签到</div>
+            <div id="signed" class="clickSign">今日已签</div>
+        </div>
+        <div class="middle">
+            <div class="icons icon1"></div>
+        </div>
+        <div class="right">
+            <div style="height: 30px;position: relative;">
+                <a href="sign_rule.html">
+                    <img src="images/rule-link.png"/>
+                </a>
+            </div>
+            <div style="margin-top: 20px; padding-left: 10px;">
+                <span>积分</br></span>
+                <span id="total">5000</span>
+                <p>今日已领10点</p>
+            </div>
+        </div>
+    </div>
+    <!-- 等级变化时显示-->
+    <div class="changeTitle">
+        <span>恭喜你获得</span><span class="newTitle">邦豆邦豆</span><span>称号！</span>
+    </div>
+<!--calendar begin-->
+
+</body>
+<script type="text/javascript" src="js/jquery-1.11.1.js"></script>
+<script type="text/javascript" src="js/calendar.js"></script>
+<script>
+//    根据积分换图
+//level1:bg：icon1.png   0<积分<1500
+//level2:bg：icon2.png   1500<=积分<=7500
+//level3:bg：icon3.png   7500<积分<=15000
+//level4:bg：icon4.png   15001<=积分<=25000
+//level5:bg：icon5.png   25001<=积分<=50000
+//level6:bg：icon6.png   50000<积分
+    var score = parseInt($('#total').text());
+    if(score>=1500 && score <= 7500){
+        $('.icons').removeClass('icon1');
+        $('.icons').addClass('icon2');
+    }else if(score > 7500 && score <= 15000){
+        $('.icons').removeClass('icon2');
+        $('.icons').addClass('icon3')
+    }else if(score >= 15001 && score <= 25000){
+        $('.icons').removeClass('icon3');
+        $('.icons').addClass('icon4')
+    }else if(score >= 25001 && score <= 50000){
+        $('.icons').removeClass('icon4');
+        $('.icons').addClass('icon5')
+    }else if(score > 50000){
+        $('.icons').removeClass('icon5');
+        $('.icons').addClass('icon6')
+    }
+//    calendar part
+    createCalendar();
+
+$('#signButton').click(
+        function(){
+            $('#currentD').attr('style', 'background-color: blue');
+        }
+)
+</script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

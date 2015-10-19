@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="爸妈邦,微信积分">
+    <meta name="keywords" content="爸妈邦,母婴,微信,积分">
+    <meta http-equiv="content-language" content="zh-CN" />
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>爸妈邦-微信积分</title>
+    <!-- Set render engine for 360 browser -->
+    <meta name="renderer" content="webkit">
+    <!-- No Baidu Siteapp-->
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="爸妈邦"/>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+    <style type="text/css">
+        body{
+            background-color: #fffef7;
+            font-family: "Microsoft YaHei","Lucida Grande","Hiragino Sans GB W3","Segoe UI",
+            "Hiragino Sans GB",  "FontAwesome", sans-serif;
+        }
+        a{
+            text-decoration: none;
+            color: #000000;
+        }
+        @media screen and (min-width: 641px) {
+            body{
+                position: relative;
+                width:640px;
+                margin:0 auto;
+            }
+        }
+        #quarterCircle{
+            clear: both;
+            width: 150px;
+            height: 100px;
+            background: #fbd4d1;
+            border:10px solid #ff007e;
+            box-shadow: 0 0 1em black;
+            border-radius: 0 0 0 150px;
+            border-bottom-right-radius:60px ;
+            color: #db3e59;
+            font-size: 22px;
+            position: absolute;
+            right: -15px;
+            top: -10px;
+        }
+        #quarterCircle .left{
+            width: 54%;
+            float: left;
+            margin-left: 5%;
+            margin-right: 1%;
+            text-align: right;
+        }
+        #score{
+            font-size:28px;
+            font-weight: 600;
+        }
+        #quarterCircle .right{
+            width: 35%;
+            float: right;
+            margin-right: 5%;
+            text-align: center;
+        }
+        #quarterCircle .right img{
+            width: 90%;
+        }
+        /*citcles*/
+        #outCircle{
+            clear: both;
+            height: 320px;
+            width: 320px;
+            border: 0.3em dotted #ff007e;
+            position: absolute;
+            top: 80px;
+            left: -15%;
+        }
+        #innerCircle{
+            width: 200px;
+            height:200px;
+            border: 10px solid #fbd4d1;
+            box-shadow: 0 0 1.2em #3f2b56;
+            background-color: #fd7189;
+            position: absolute;
+            top: 60px;
+        }
+        .circle{
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            border-radius: 50%;
+        }
+        #circle1{
+            background: url("images/daily/1_personal.png") no-repeat white;
+            background-size: 60% 70%;
+            background-position: center;
+            position: absolute;
+            top: -20px;
+            right: 45%;
+        }
+        #circle2{
+            background: url("images/daily/2_signin.png") no-repeat white;
+            background-size: 60% 70%;
+            background-position: center;
+            position: absolute;
+            top: 20px;
+            right: 40px;
+        }
+        #circle3{
+            background: url("images/daily/3_share.png") no-repeat white;
+            background-size: 60% 70%;
+            background-position: center;
+            position: absolute;
+            top: 130px;
+            right: -30px;
+        }
+        #circle4{
+            background: url("images/daily/4_cent.png") no-repeat white;
+            background-size: 60% 70%;
+            background-position: center;
+            position: absolute;
+            top: 240px;
+            right: 40px;
+        }
+        #circle5{
+            background: url("images/daily/5_shop.png") no-repeat white;
+            background-size: 60% 70%;
+            background-position: center;
+            position: absolute;
+            bottom: -30px;
+            right: 45%;
+        }
+        .small{
+            width: 60px;
+            height: 60px;
+            box-shadow: 0 0 1em #aaadae;
+            z-index: 100;
+        }
+        .nav-title{
+            position: absolute;
+            width: 80px;
+            top:-20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="quarterCircle">
+        <div class="left">
+            <span id="score">3928</span></br>
+            <span>积分</span>
+        </div>
+        <div class="right">
+            <img src="./images/daily/medal.png"/>
+        </div>
+    </div>
+    <!--begin circles-->
+    <div id="outCircle" class="circle">
+        <div id="innerCircle" class="circle small"></div>
+        <div id="circle1" class="circle small">
+            <a href="bind.html">
+                <div class="nav-title" >个人信息</div>
+            </a>
+        </div>
+        <div id="circle2" class="circle small">
+            <a href="bind.html">
+                <div class="nav-title" >个人信息</div>
+            </a>
+        </div>
+        <div id="circle3" class="circle small"></div>
+        <div id="circle4" class="circle small"></div>
+        <div id="circle5" class="circle small"></div>
+    </div>
+</body>
+</html>

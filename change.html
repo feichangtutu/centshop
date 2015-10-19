@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="爸妈邦,微信积分">
+    <meta name="keywords" content="爸妈邦,母婴,微信,积分">
+    <meta http-equiv="content-language" content="zh-CN" />
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>奖品兑换</title>
+    <!-- Set render engine for 360 browser -->
+    <meta name="renderer" content="webkit">
+    <!-- No Baidu Siteapp-->
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="爸妈邦"/>
+    <!--<link rel="shortcut icon" type="image/ico" href="ui/resource/images/common/favicon.ico">-->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+    <link rel="stylesheet" type="text/css" href="css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="css/bind.css"/>
+    <style>
+        body{
+            background: #FFFFFF;
+        }
+        #top{
+            width: 70%;
+            margin:20px 15%;
+        }
+        #top img{
+            max-width: 100%;
+        }
+        .button{
+            background:#ee767c;
+            font-size: 18px;
+            line-height: 25px;
+            height: 25px;
+            width: 0.3rem;
+            padding: 5px;
+        }
+        #changeCode{
+            outline: none;
+            border: 1px solid #e5325d;
+            margin: .05rem;
+            width: 0.5rem;
+            height: 30px;
+            line-height: 25px;
+        }
+        #change{
+            display: inline-block;
+            width: .26rem;
+            padding: 5px;
+            background: #ee767c;
+            color: #FFFFFF;
+            height: 25px;
+            line-height: 25px;
+            font-size: 16px;
+            text-align: center;
+        }
+        #whatGoods{
+            width: 1rem;
+            height: 50px;
+            line-height: 50px;
+            font-size: 25px;
+            text-align: center;
+            background: #fefbdf;
+        }
+    </style>
+</head>
+<body>
+<div id="top">
+    <img src="images/change-top.png"/>
+</div>
+<div>
+    <input id="changeCode" name="changeCode" type="text" placeholder="请输入兑换码"/>
+    <span id="change">立即兑换</span>
+</div>
+<!-- 这以后的部分应该是点击立即兑换后才出现 兑换奖品及需要填的信息 -->
+<div id="whatGoods">
+    兑换奖品：咕咚手环
+</div>
+
+<div class="button" style="margin-bottom: 20px;">收获信息</div>
+<div id="info">
+    <div class="zone">
+        <label class="name" for="chName">姓名</label>
+        <input class="detail" id="chName" type="text" placeholder=""/>
+        <div class="lines"></div>
+    </div>
+    <div class="zone">
+        <label class="name" for="tel">手机号</label>
+        <input class="detail" id="tel" type="tel" placeholder=""/>
+        <div class="lines"></div>
+    </div>
+    <div class="zone">
+        <label class="name" for="city">省份／城市</label>
+        <input class="detail" id="city" type="text" placeholder=""/>
+        <div class="lines"></div>
+    </div>
+    <div class="zone">
+        <label class="name" for="county">县／区</label>
+        <input class="detail" id="county" type="text" placeholder=""/>
+        <div class="lines"></div>
+    </div>
+    <div class="zone">
+        <label class="name" for="address">详细地址</label>
+        <input class="detail" id="address" type="text" placeholder=""/>
+        <div class="lines"></div>
+    </div>
+</div>
+<div class="button" style="margin-top: 30px; font-size: 20px;">提交</div>
+</body>
+
+<script type="text/javascript">
+    var w_width = document.documentElement.clientWidth;
+    if(w_width <= 640){
+        document.getElementsByTagName("html")[0].style.fontSize = w_width+ "px";
+    }else if(w_width > 640){
+        document.getElementsByTagName("html")[0].style.fontSize = 640+ "px";
+    }
+
+    window.addEventListener("resize", function() {
+        location.reload()
+    }, false);
+</script>
+</html>

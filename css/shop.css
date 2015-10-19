@@ -1,0 +1,133 @@
+
+body{
+    background-color: #fffef7;
+    font-family: "Microsoft YaHei","Lucida Grande","Hiragino Sans GB W3","Segoe UI",
+    "Hiragino Sans GB",  "FontAwesome", sans-serif;
+    font-size: 16px;
+}
+@media screen and (min-width: 641px) {
+    body{
+        position: relative;
+        width:640px;
+        margin:0 auto;
+        font-size: 16px;
+    }
+}
+.title{
+    border-radius: 5px;
+    box-shadow:  0 0 1em #d8d7cb;
+    width: 60%;
+    margin: 20px auto;
+    font-size: 24px;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+}
+.index {
+    width: 100%;
+    padding: 10px auto;
+    background: #faeeeb;
+    overflow: hidden;
+    zoom: 1;
+
+    /*height: 5rem;*/
+}
+.index .am-u-sm-6{
+    margin-top: 15px;
+    color:#e5325d;
+    padding: 0;
+}
+.ads{
+    clear: both;
+    height:150px;
+    background: #e5325d;
+    line-height: 150px;
+    text-align: center;
+}
+.nav{
+    margin-top: 20px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.nav p{
+    padding: 0;
+    margin: 5px auto;
+    text-align: center;
+    color: black;
+    font-size: 1.2rem;
+}
+.nav .item{
+    border-radius: 100px;
+    box-shadow: 0 0 1em #000000;;
+}
+.nav .line{
+    margin: 10px auto;
+}
+.item1{
+    background: url("../images/nav/1_new.jpg") white center no-repeat;
+    background-size: 70% 70%;
+}
+.item2{
+    background: url("../images/nav/2_shopping.png") white center no-repeat;
+    background-size: 70% 70%;
+}
+.item3{
+    background: url("../images/nav/3_entertainment.png") white center no-repeat;
+    background-size: 70% 70%;
+}
+.item4{
+    background: url("../images/nav/4_life.png") white center no-repeat;
+    background-size: 70% 70%;
+}
+.item5{
+    background: url("../images/nav/5_food.png") white center no-repeat;
+    background-size: 70% 70%;
+}
+.item6{
+    background: url("../images/nav/6_membership.png") white center no-repeat;
+    background-size: 70% 70%;
+}
+.item7{
+    background: url("../images/nav/7_lottery.png") white center no-repeat;
+    background-size: 70% 70%;
+}
+.item8{
+    background: url("../images/nav/8_other.png") white center no-repeat;
+    background-size: 70% 70%;
+}
+.goods{
+    margin-bottom: 2rem ;
+}
+.goods .goodsItem{
+    box-shadow: 0 0 1em #79838d ;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+.goods .flag{
+    position: absolute;
+    top: 0;
+    left: .5rem;
+    max-width: 20%;
+}
+.goods .present{
+    position: absolute;
+    top: 2rem;
+    right: 1rem;
+    max-width: 20%;
+}
+.goods .am-u-sm-6{
+    width: 47%;
+}
+.goodsItem h1, .goodsItem h3, .goodsItem h4{
+    font: "Lucida Grande";
+    margin: 0;
+}
+.goodsItem h1{
+    margin-top: 2rem;
+    font-size: 1.8rem;
+}
+.goodsItem h4{
+    color: #e5325d;
+}

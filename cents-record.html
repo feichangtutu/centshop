@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="爸妈邦,微信积分">
+    <meta name="keywords" content="爸妈邦,母婴,微信,积分">
+    <meta http-equiv="content-language" content="zh-CN" />
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>爸妈邦-积分获取记录</title>
+    <!-- Set render engine for 360 browser -->
+    <meta name="renderer" content="webkit">
+    <!-- No Baidu Siteapp-->
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="爸妈邦"/>
+    <!--<link rel="shortcut icon" type="image/ico" href="ui/resource/images/common/favicon.ico">-->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+    <style type="text/css">
+        body{
+            background-color: #fffef7;
+            font-family:"Lucida Grande", "Microsoft YaHei","Hiragino Sans GB W3","Segoe UI",
+            "Hiragino Sans GB",  "FontAwesome", sans-serif;
+        }
+        @media screen and (max-width: 320px) {
+            #centsRecordTitle{
+                width: 60%;
+            }
+        }
+        @media screen and (min-width: 321px) {
+            #centsRecordTitle{
+                width: 45%;
+            }
+        }
+        @media screen and (min-width: 641px) {
+            body{
+                position: relative;
+                width:640px;
+                margin:0 auto;
+            }
+        }
+        #centsRecordTitle{
+            color: #e5325d;
+            background: #faeeeb;
+            font-size:25px;
+            font-weight: 400;
+            margin: 0 auto;
+            border-radius: 5px;
+            margin: 0 auto;
+            margin-top: 40px;
+            padding: 10px;
+            width: 50%;
+            box-shadow: 0 0 .4em #000000;
+            text-align: center;
+        }
+        .leftNode,.rightNode{
+            width: 49%;
+            position: relative;
+        }
+        .leftNode{
+            clear: both;
+            float: left;
+            /*border-right: 5px dotted #e2315c;*/
+            margin-bottom: 5px;
+        }
+        .rightNode{
+            clear: both;
+            float: right;
+        }
+        .date{
+            color: #ef8ea0;
+        }
+        .recordDetail{
+            border-radius: 5px;
+            box-shadow: 0 0 .4em #000000;
+            padding: 5px;
+            width: 90%;
+            font-size: 14px;
+        }
+        .leftContent{
+            width: 70%;
+            float: right;
+            margin-right: 17%;
+        }
+        .rightContent{
+            float: left;
+            margin-left: 17%;
+        }
+        hr{
+            width: 15%;
+            margin-left:1%;
+            margin-right: 1%;
+            list-style: none;
+            clear: both;
+            border: 0;
+            border-bottom: 3px #e2315c dotted;
+            bottom: 20px;
+        }
+        .leftDot{
+            position: absolute;
+            right: 0;
+        }
+        .rightDot{
+            position: absolute;
+            left: 0;
+        }
+        #verticalLine{
+            width: 49%;
+            position: absolute;
+            left: 0;
+            border-right: 5px dotted #e2315c;
+        }
+    </style>
+</head>
+<body>
+    <div id="centsRecordTitle">
+        积分获取记录
+    </div>
+
+    <div id="nodes">
+        <!-- left node-->
+        <div class="leftNode node">
+            <div class="leftContent">
+                <p class="date">2015年3月8日</p>
+                <div class="recordDetail">
+                    每日签到</br>获得积分10点
+                </div>
+            </div>
+            <hr class="leftDot">
+        </div>
+        <!--right node-->
+        <div class="rightNode node">
+            <div class="rightContent">
+                <p class="date">2015年3月10日</p>
+                <div class="recordDetail">
+                    转发文章</br>获得积分10点
+                </div>
+            </div>
+            <hr class="rightDot">
+        </div>
+        <!-- left node-->
+        <div class="leftNode node">
+            <div class="leftContent">
+                <p class="date">2015年3月8日</p>
+                <div class="recordDetail">
+                    每日签到</br>获得积分10点
+                </div>
+            </div>
+            <hr class="leftDot">
+        </div>
+        <!--right node-->
+        <div class="rightNode node">
+            <div class="rightContent">
+                <p class="date">2015年3月10日</p>
+                <div class="recordDetail">
+                    转发文章标题标题标题标题</br>获得积分10点
+                </div>
+            </div>
+            <hr class="rightDot">
+        </div>
+    </div>
+    <div id="verticalLine"></div>
+</body>
+<script src="js/jquery-1.11.1.js"></script>
+<script type="text/javascript">
+    var heights= 0;
+    var length = $(".node").length;
+    console.log(length);
+    ($(".node")).each(
+            function(){
+                heights +=$(this).height();
+            }
+    )
+    $("#verticalLine").css("height",heights+20+'px');
+</script>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="爸妈邦,微信积分">
+    <meta name="keywords" content="爸妈邦,母婴,微信,积分">
+    <meta http-equiv="content-language" content="zh-CN" />
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>积分商城</title>
+    <!-- Set render engine for 360 browser -->
+    <meta name="renderer" content="webkit">
+    <!-- No Baidu Siteapp-->
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="爸妈邦"/>
+    <!--<link rel="shortcut icon" type="image/ico" href="ui/resource/images/common/favicon.ico">-->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+    <link rel="stylesheet" type="text/css" href="vendor/amaze/amazeui.css"/>
+    <link rel="stylesheet" type="text/css" href="css/shop.css"/>
+
+</head>
+<body>
+<p class="title">积分商城</p>
+<div data-am-widget="slider" class="am-slider am-slider-c2 slider-home-small" data-am-slider='{controlNav: true }'>
+    <ul class="am-slides">
+        <li>
+            <a href="">
+                <img title="" src="images/slide1.png"/>
+            </a>
+            <a href="">
+                <div class="am-slider-desc">轮播图1</div>
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <img title="" src="images/slide1.png"/>
+            </a>
+            <a href="">
+                <div class="am-slider-desc">轮播图2</div>
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <img title="" src="images/slide1.png"/>
+            </a>
+            <a href="">
+                <div class="am-slider-desc">轮播图3</div>
+            </a>
+        </li>
+    </ul>
+</div>
+
+<div class="index am-u-sm-12">
+    <!-- 此跳转需区分有无积分，积分为0则跳转到no-cents.html-->
+    <a href="my-cents.html">
+        <div class="am-u-sm-6">
+            <div class="am-u-sm-4"><img src="images/daily/4_cent.png"/></div>
+            <div class="am-u-sm-8">积分<span id="score">5000</span></div>
+        </div>
+    </a>
+    <!-- 此跳转需区分有无兑换记录，没有则跳转到no-change.html-->
+    <a href="change-record.html">
+        <div class="am-u-sm-6">
+            <div class="am-u-sm-4"><img src="images/record.png"/></div>
+            <div class="am-u-sm-8">兑换记录</div>
+        </div>
+    </a>
+</div>
+
+<div class="ads">
+    预留广告位
+</div>
+<div class="nav am-u-sm-12" style="padding: 0;">
+    <div class="line am-u-sm-12">
+        <a href="shop-sub1.html">
+            <div class="am-u-sm-3 w">
+                <div class="item1 item"></div>
+                <p>今日新品</p>
+            </div>
+        </a>
+        <a href="shop-sub2.html">
+            <div class="am-u-sm-3 w">
+                <div class="item2 item"></div>
+                <p>电商购物</p>
+            </div>
+        </a>
+        <a href="shop-sub3.html">
+            <div class="am-u-sm-3 w">
+                <div class="item3 item"></div>
+                <p>休闲娱乐</p>
+            </div>
+        </a>
+        <a href="shop-sub4.html">
+            <div class="am-u-sm-3 w">
+                <div class="item4 item"></div>
+                <p>生活服务</p>
+            </div>
+        </a>
+    </div>
+    <div class="line am-u-sm-12">
+        <a href="shop-sub5.html">
+            <div class="am-u-sm-3 w">
+                <div class="item5 item"></div>
+                <p>本地美食</p>
+            </div>
+        </a>
+        <a href="shop-sub6.html">
+            <div class="am-u-sm-3 w">
+                <div class="item6 item"></div>
+                <p>邦粉专区</p>
+            </div>
+        </a>
+        <a href="shop-sub7.html">
+            <div class="am-u-sm-3 w">
+                <div class="item7 item"></div>
+                <p>抽奖</p>
+            </div>
+        </a>
+        <a href="shop-sub8.html">
+            <div class="am-u-sm-3 w">
+                <div class="item8 item"></div>
+                <p>其他</p>
+            </div>
+        </a>
+    </div>
+</div>
+<div class="goods am-u-sm-12">
+    <div class="am-u-sm-6 goodsItem">
+        <h1>抽奖</h1>
+        <h3><span>10000</span>积分</h3>
+        <h4>咕咚手环</h4>
+        <img src="images/test/test.png"/>
+        <img class="flag" src="images/flag.png"/>
+        <img class="present" src="images/present.png"/>
+    </div>
+    <div class="am-u-sm-6 goodsItem">
+        <h1>抽奖</h1>
+        <h3><span>10000</span>积分</h3>
+        <h4>超薄笔记本</h4>
+        <img src="images/test/test.png"/>
+        <img class="flag" src="images/flag.png"/>
+        <img class="present" src="images/present.png"/>
+    </div>
+</div>
+<!--非抽奖展示不带 <img class="present" src="images/present.png"/>-->
+<div class="goods am-u-sm-12">
+    <div class="am-u-sm-6 goodsItem">
+        <h1>京东商城</h1>
+        <h3><span>100</span>积分</h3>
+        <h4>京东商城30元兑换券</h4>
+        <img src="images/test/test.png"/>
+        <img class="flag" src="images/flag.png"/>
+        <!--<img class="present" src="images/present.png"/>-->
+    </div>
+    <div class="am-u-sm-6 goodsItem">
+        <h1>抽奖</h1>
+        <h3><span>当当网</span>积分</h3>
+        <h4>当当网30元兑换券</h4>
+        <img src="images/test/test.png"/>
+        <img class="flag" src="images/flag.png"/>
+        <!--<img class="present" src="images/present.png"/>-->
+    </div>
+</div>
+</body>
+<script type="text/javascript" src="js/jquery-1.11.1.js"></script>
+<script type="text/javascript" src="vendor/amaze/amazeui.js"></script>
+<script>
+    $('.item').css('width',$('.w').width());
+    $('.item').css('height',$('.item').width());
+    window.addEventListener("resize", function() {
+        location.reload()
+    }, false);
+</script>
+</html>
